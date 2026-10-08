@@ -96,4 +96,4 @@ function createBookController(bookService, stockService) {
   return { list, search, getById, create, update, remove, adjustStock };
 }
 
-module.exports = { createBookController };
+module.exports = createBookController;
