@@ -5,10 +5,10 @@ const { createStatsRepository } = require("./repositories/statsRepository");
 const { createBookService } = require("./services/bookService");
 const { createStockService } = require("./services/stockService");
 const { createCategoryService } = require("./services/dashboardService");
-const { createBookController } = require("./controllers/bookController");
-const { createCategoryController, createDashboardController } = require("./controllers/catalogController");
-const { createBooksRouter } = require("./routes/books");
-const { createCategoriesRouter, createDashboardRouter } = require("./routes/catalog");
+const createBookController = require("./controllers/bookController");
+const createCategoryController, createDashboardController = require("./controllers/catalogController");
+const createBooksRouter = require("./routes/books");
+const createCategoriesRouter, createDashboardRouter = require("./routes/catalog");
 const { errorHandler } = require("./middleware/errorHandler");
 
 function createApp(db) {
